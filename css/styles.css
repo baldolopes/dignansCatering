@@ -2,8 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-   
+    box-sizing: border-box; 
 }
 
 body{
@@ -26,52 +25,134 @@ header{
 }
 
 .logo img{
-    max-width: 70%;
+    max-width: 50%;
     height: auto;
     margin-left: 0;
     justify-content: center;
     align-items: center;
 }
 
-.nav-list{
-    list-style: none;
+.abrir-menu,
+.cerrar-menu {
+    display: block;
+    border: 0;
+}
+
+.abrir-menu{
+    color: #1c1c1c;
+    font-size: 2rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.cerrar-menu{
+    font-size: 1.2rem;
+    color: #ececec;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.nav{
+    opacity: 0;
+    visibility: hidden;
     display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);  
+}
+
+.nav.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-list{
+    flex-direction: column;
+    list-style: none;
+    align-items: end;
     gap: 2rem;
+    
 }
 
 .nav-list li a{
     text-decoration: none;
-    color: #1c1c1c;
+    color: #ffffff;
 }
 
-.nav{
-    display: none;
-}
+
 
 /* Media query for tablet devices (min-width: 767px) */
 @media only screen and (min-width: 767px) {
 
-    .abrir-menu{
+    .abrir-menu,
+    .cerrar-menu {
         display: none;
     }
     
     .nav{
-        display: block;
+        /* display: block; */
+        opacity: 100;
+        visibility: visible;
+        flex-direction: row;
+        display: flex;
+        background-color: #F2E8DF;
+        box-shadow: none;
+    }
+
+    .nav-list{
+        flex-direction: row;
+        list-style: none;
+        display: flex;
+        gap: 1rem;     
+    }
+
+    .nav-list li a{
+        text-decoration: none;
+        color: #1c1c1c;
     }
 }
+
+
+
 
 /* Media query for desktop devices (min-width: 991px) */
 @media only screen and (min-width: 991px) {
     
-    .abrir-menu{
+    .abrir-menu,
+    .cerrar-menu {
         display: none;
     }
 
     .nav{
-        display: block;
+        /* display: block; */
+        opacity: 100;
+        visibility: visible;
+        flex-direction: row;
+        display: flex;
+        background-color: #F2E8DF;
+        box-shadow: none;
+    }
+
+    .nav-list{
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+    }
+
+    .nav-list li a{
+        text-decoration: none;
+        color: #1c1c1c;
     }
 
 }
+
+
 
 /* .nav-bar{
     flex-grow: 1;

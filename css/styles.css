@@ -187,9 +187,12 @@ footer{
     .footer-section {
         flex-direction: row; 
         justify-content: space-between;
-        padding: 1em 0;
+        padding: 1em ;
     }
 
-    .footer-section contact, 
+    .sitemap, .contact-us, .open-hours, 
+    .find-us, .follow-us{
+        width: 20%;
+    }
 
 }

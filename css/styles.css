@@ -6,9 +6,7 @@
 }
 
 body{
-    background-image: url('/images/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    
     font-family: Arial, Helvetica, sans-serif;
 
     /* background-position: center; */
@@ -85,7 +83,35 @@ header{
     color: #ffffff;
 }
 
+.home{
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
 
+footer{
+    display: flex;
+    flex-direction: column;
+    /* height: auto; */
+    background-color: #F2E8DF;
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+
+.footer-section{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
 
 /* Media query for tablet devices (min-width: 767px) */
 @media only screen and (min-width: 767px) {
@@ -116,6 +142,13 @@ header{
         text-decoration: none;
         color: #1c1c1c;
     }
+
+    .footer-section {
+        flex-direction: row; 
+        justify-content: space-between;
+        padding: 1em 0;
+    }
+
 }
 
 
@@ -150,61 +183,13 @@ header{
         color: #1c1c1c;
     }
 
+   
+    .footer-section {
+        flex-direction: row; 
+        justify-content: space-between;
+        padding: 1em 0;
+    }
+
+    .footer-section contact, 
+
 }
-
-
-
-/* .nav-bar{
-    flex-grow: 1;
-    text-align: right;
-} */
-
-/* .nav-bar ul{
-    list-style: none;
-    display: flex;
-    gap: 60px;
-}
-
-.nav-bar ul li a{
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.nav-bar ul li a:hover{
-    text-decoration: underline;
-    background-color: rgb(138, 43, 226, 0.06);
-}
-
-.nav-bar ul li a.active{
-    background-color: gray;
-    color: white;
-}
-
-ul{
-    width: 100%;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    display: none;
-    background: #F2E8DF;
-    padding-top: 25px;
-}
-
-ul li{
-    height: 50px;
-    border-bottom: 1px solid slategray;
-    width: 100%;
-    list-style: none;
-}
-
-#mobile_click{
-    position: absolute;
-    top: 0px;
-    right: 10px;
-    color: black;
-    font-size: 40px;
-    cursor: pointer;
-} */

@@ -8,7 +8,7 @@
 body{
     
     font-family: Arial, Helvetica, sans-serif;
-
+    line-height: 1.5;
     /* background-position: center; */
 }
 
@@ -23,7 +23,7 @@ header{
 }
 
 .logo img{
-    max-width: 50%;
+    max-width: 60%;
     height: auto;
     margin-left: 0;
     justify-content: center;
@@ -38,20 +38,22 @@ header{
 
 .abrir-menu{
     color: #1c1c1c;
-    font-size: 2rem;
+    font-size: 2.5rem;
     background-color: transparent;
     cursor: pointer;
 }
 
 .cerrar-menu{
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: #ececec;
     background-color: transparent;
     cursor: pointer;
 }
 
 .nav{
-    opacity: 0;
+    /* opacity: 0; */
+    position: absolute;
+    bottom: 0;
     visibility: hidden;
     display: flex;
     flex-direction: column;
@@ -74,8 +76,8 @@ header{
     flex-direction: column;
     list-style: none;
     align-items: end;
-    gap: 2rem;
-    
+    line-height: 3;
+    font-weight: bold;
 }
 
 .nav-list li a{
@@ -87,7 +89,7 @@ header{
     background-image: url('/images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 70vh;
     color: white;
     text-align: center;
     display: flex;
@@ -97,21 +99,37 @@ header{
 }
 
 footer{
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     /* height: auto; */
     background-color: #F2E8DF;
     padding: 1.5rem;
-    gap: 1.5rem;
+    /* gap: 1.5rem; */
 }
 
 .footer-section{
+    margin-top: 0;
     display: flex;
     /* flex-wrap: wrap; */
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
 }
+
+.footer a{
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-bottom: 0px;
+}
+
+footer a:hover{
+    color: #009879
+}
+
+
+
 
 /* Media query for tablet devices (min-width: 767px) */
 @media only screen and (min-width: 767px) {
@@ -164,18 +182,28 @@ footer{
 
     .nav{
         /* display: block; */
+        position: absolute;
+        bottom: 0;
         opacity: 100;
         visibility: visible;
         flex-direction: row;
         display: flex;
         background-color: #F2E8DF;
         box-shadow: none;
+        height: 100px;
+        justify-content: center;
+        
     }
 
     .nav-list{
         list-style: none;
         display: flex;
         gap: 2rem;
+        justify-content: center;
+        margin-bottom: 0;
+        
+        vertical-align: bottom;
+        
     }
 
     .nav-list li a{
@@ -183,16 +211,48 @@ footer{
         color: #1c1c1c;
     }
 
-   
-    .footer-section {
-        flex-direction: row; 
+   .footer{
+        display: flex;
         justify-content: space-between;
-        padding: 1em ;
-    }
+        flex-wrap: wrap;
+        line-height: 1.5;
+   }
 
     .sitemap, .contact-us, .open-hours, 
     .find-us, .follow-us{
         width: 20%;
+    }
+
+    .follow-us{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+    }
+
+    .follow-us .social-icon{
+        display: inline-block;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .follow-us .social-icon i{
+        vertical-align: middle;
+    }
+
+    footer h3{
+        font-size: 18px;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+
+    footer iframe{
+        width: 250px;
+        height: 150px;
     }
 
 }

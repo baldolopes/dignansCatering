@@ -249,6 +249,15 @@ footer iframe {
         border-bottom: 1px solid #ddd;
     }
     
+    .logo img{
+        max-width: 45%;
+        height: auto;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease;
+    }
+
     .nav{
         /* display: block; */
         position: absolute;

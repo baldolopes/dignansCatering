@@ -132,17 +132,49 @@ header{
     width: 100%; /* Línea animada debajo del enlace */
 }
 
-.home{
+.main-content{
     background-image: url('/images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 70vh;
     color: white;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: 4rem 2rem;
+}
+
+.main-content h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.welcome p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #00000062;
+    border-radius: 10px;
+}
+
+.offer{
+    background-color: #00000062;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    bottom: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.offer p{
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 1.1rem;
+    text-align: left;
 }
 
 footer{

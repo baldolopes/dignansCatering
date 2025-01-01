@@ -98,7 +98,7 @@ header{
     display: flex;
     flex-direction: column;
     list-style: none;
-    align-items: left;
+    align-items: end;
     gap: 1.5rem;
     font-weight: bold;
     margin-top: 1rem;
@@ -279,6 +279,7 @@ footer iframe {
     header{
         padding: 0;
         border-bottom: 1px solid #ddd;
+        display: flex;
     }
     
     
@@ -371,9 +372,14 @@ footer iframe {
     }
 
     header{
-        padding: 0;
+        padding: 2rem;
         border-bottom: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #F2E8DF;
     }
+
     .logo img{
         max-width: 45%;
         height: auto;

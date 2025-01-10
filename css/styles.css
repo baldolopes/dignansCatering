@@ -146,7 +146,7 @@ header{
 }
 
 .main-content h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -185,6 +185,113 @@ footer{
     background-color: #F2E8DF;
     padding: 1.5rem;
     font-size: 1rem;
+}
+
+.contact-form-section {
+    background-color: rgba(219, 219, 219, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+    flex-direction: column;
+}
+
+.contact-form-section h3{
+    color: #000000;
+    font-size: 1.4rem;
+}
+
+/* Form title */
+.contact h1 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 1.8em;
+    color: #000000;
+    background-color: rgb(160, 160, 160);
+}
+
+/* Form styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: unset;
+    margin: 0.5em;
+}
+
+/* Input and textarea styling */
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Focus state for inputs */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #333;
+}
+
+/* Label styling */
+.contact-form label {
+    margin-bottom: 0.5em;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Submit button styling */
+.submit-btn {
+    padding: 0.8rem 1.5em;
+    border: none;
+    border-radius: 4px;
+    background-color: #131f0f;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #493731;
+    
+}
+
+.error{
+    color: red;
+    font-size: 0.7em;
+}
+
+/* Form input constraints */
+input[type="email"],
+input[type="tel"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s;
+    color: #333;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border: 1px solid #8a2be2; /* Violeta */
+    outline: none;
+}
+
+::placeholder{
+    color: rgb(141, 141, 141);
 }
 
 .footer-section{

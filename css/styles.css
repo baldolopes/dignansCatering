@@ -189,11 +189,11 @@ footer{
 
 .contact-form-section {
     background-color: rgba(219, 219, 219, 0.9);
-    padding: 40px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    margin: 40px auto;
+    max-width: 99.99%;
+    margin: 20px auto;
     text-align: center;
     flex-direction: column;
 }
@@ -235,7 +235,7 @@ footer{
 /* Input and textarea styling */
 .contact-form input,
 .contact-form textarea {
-    padding: 0.8em;
+    padding: 0.8rem;
     border-radius: 4px;
     border: 1px solid #ccc;
     font-size: 1rem;
@@ -250,7 +250,7 @@ footer{
 
 /* Label styling */
 .contact-form label {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
     color: #000000;
     font-weight: bold;
     text-align: left;

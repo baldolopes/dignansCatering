@@ -210,7 +210,7 @@ footer{
 }
 
 .offer .images-container {
-    display: flex; /* Alinea las imágenes horizontalmente */
+    display: flex; 
     justify-content: center; 
     gap: 1rem; 
     margin-bottom: 1rem; 
@@ -232,18 +232,30 @@ footer{
 }
 
 .offer:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
+    
+}
+
+.offer img:hover {
+    transform: translateY(-3px);
+    transition: transform 0.7s ease;
 }
 
 .offer img {
-    width: 40%;
+    width: 47%;
     border-radius: 8px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.1rem;
+}
+
+.images-delivery-container img{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.1rem;
 }
 
 .offer h3 {
-    font-size: 1.5rem;
-    margin: 0.5rem 0;
+    font-size: 1.3rem;
+    margin: 0rem;
     color: #0077cc;
     text-align: center;
 }

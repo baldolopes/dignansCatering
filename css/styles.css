@@ -144,12 +144,14 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: baseline;
-    padding: 2rem 2rem;
+    padding: 1rem 0rem;
 }
 
 .main-content h1{
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
 }
 
 .welcome p{
@@ -194,6 +196,8 @@ footer{
 
 .monthly-offers {
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .monthly-offers h2 {
@@ -206,7 +210,8 @@ footer{
 .offers-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
+    margin: 0;
     justify-content: center;
 }
 
@@ -222,10 +227,10 @@ footer{
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 45%;
     max-width: 300px;
     text-align: left;
-    padding: 1rem;
+    padding: 0.7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,15 +261,18 @@ footer{
 
 .offer h3 {
     font-size: 1.3rem;
-    margin: 0rem;
+    margin: 0.5rem;
+    margin-top: 0;
     color: #0077cc;
     text-align: center;
+    line-height: 1.2;
 }
 
 .offer p {
     font-size: 0.9rem;
     color: #555;
     margin-bottom: 1rem;
+    line-height: 1.2;
 }
 
 .offer ul {
@@ -272,6 +280,7 @@ footer{
     padding-left: 1.5rem;
     font-size: 0.9rem;
     color: #333;
+    line-height: 1.1;
 }
 
 .offer ul li {

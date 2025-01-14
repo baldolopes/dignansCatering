@@ -198,6 +198,7 @@ footer{
     text-align: center;
     margin: 0;
     padding: 0;
+    padding-top: 1rem;
 }
 
 .monthly-offers h2 {
@@ -235,7 +236,9 @@ footer{
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s ease;
+    margin-bottom: 1rem;
 }
+
 
 .offer:hover {
     transform: translateY(-4px);
@@ -287,6 +290,25 @@ footer{
     margin-bottom: 0.5rem;
 }
 
+.add-to-cart{
+    margin-top: auto;
+    text-align: center;
+}
+
+.add-to-cart .buy-button{
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart .buy-button:hover {
+    background-color: #004da0;
+}
 
 /* CONTACT US STYLES */
 .contact-form-section {

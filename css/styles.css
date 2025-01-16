@@ -304,7 +304,6 @@ footer iframe {
 
 /* MONTHLY OFFERS STYLES */
 /* Main content styling */
-
 .monthly-offers {
     text-align: center;
     margin: 0;
@@ -421,6 +420,120 @@ footer iframe {
 .add-to-cart .buy-button:hover {
     background-color: #004da0;
 }
+
+/* MENU SELECTION */
+/* Main content styling */
+.all-menu {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
+}
+
+.all-menu h2 {
+    font-size: 1.8rem;
+    background-color: #ddd;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.party-menu, .lunch-menu, .executive-menu, .breakfast-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin: 0rem;
+    justify-content: center;
+    
+}
+
+.menu .images-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 1rem; 
+    margin-bottom: 1rem; 
+}
+
+.menu {
+    background-color: #FFFFFFD9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    max-width: 300px;
+    text-align: left;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+
+.menu:hover {
+    transform: translateY(-4px);
+    
+}
+
+.menu img:hover {
+    transform: translateY(-3px);
+    transition: transform 0.7s ease;
+}
+
+.menu img {
+    width: 47%;
+    border-radius: 8px;
+    margin-bottom: 0.1rem;
+}
+
+.menu h3 {
+    font-size: 1.3rem;
+    margin: 0.5rem;
+    margin-top: 0;
+    color: #0077cc;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.menu p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.menu ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1;
+}
+
+.menu ul li {
+    margin-bottom: 0.5rem;
+}
+
+.add-to-cart{
+    margin-top: auto;
+    text-align: center;
+}
+
+.add-to-cart .buy-button{
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart .buy-button:hover {
+    background-color: #004da0;
+}
+
 
 /* CONTACT US STYLES */
 .contact-form-section {

@@ -107,3 +107,4 @@ if (storedData) {
 } else {
     document.getElementById('storedData').textContent = "No data stored.";
 }
+

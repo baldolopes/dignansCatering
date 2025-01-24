@@ -109,65 +109,94 @@ if (storedData) {
 }
 
 // Register/Login Form validation
+// Form validation
 function validateForm1() {
-    // Reset error messages
+    // Reset previous error messages
     document.getElementById('nameError').textContent = '';
     document.getElementById('emailError').textContent = '';
-    document.getElementById('passwordError')?.textContent = '';
-    document.getElementById('mobileError')?.textContent = '';
+    document.getElementById('passwordError').textContent = '';
+    document.getElementById('mobileError').textContent = '';
 
     // Get form values
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const password = document.getElementById('password').value.trim();
-    const mobile = document.getElementById('mobile').value.trim();
-
-    let isValid = true;
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var password = document.getElementById('password').value.trim();
+    var mobile = document.getElementById('mobile').value.trim();
 
     // Validate name
-    const namePattern = /^[a-zA-Z\s]+$/; // Only letters and spaces
     if (name === '') {
         document.getElementById('nameError').textContent = 'Name is required';
-        isValid = false;
-    } else if (!namePattern.test(name)) {
-        document.getElementById('nameError').textContent = 'Name must contain only letters and spaces';
-        isValid = false;
-    } else if (name.split(/\s+/).length < 2) {
-        document.getElementById('nameError').textContent = 'Name must include at least two words';
-        isValid = false;
+        return false;
+    }
+    
+    // Regular expression to check if the name contains only letters
+    var namePattern = /^[a-zA-Z ]+$/;
+    
+    if (!namePattern.test(name)) {
+        document.getElementById('nameError').textContent = 'Name must contain only letters';
+        return false;
+    }
+    
+    // Counts the number of words
+    var wordCount = name.trim().split(/\s+/).length;
+    
+    if (wordCount < 2) {
+        document.getElementById('nameError').textContent = 'Name must have at least two words';
+        return false;
     }
 
     // Validate email
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email format
-    if (email === '') {
-        document.getElementById('emailError').textContent = 'Email is required';
-        isValid = false;
-    } else if (!emailPattern.test(email)) {
-        document.getElementById('emailError').textContent = 'Enter a valid email address';
-        isValid = false;
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        document.getElementById('emailError').textContent = 'Invalid email address';
+        return false;
     }
 
     // Validate password
     if (password === '') {
         document.getElementById('passwordError').textContent = 'Password is required';
-        isValid = false;
-    } else if (password.length < 6) {
+        return false;
+    }
+    if (password.length < 6) {
         document.getElementById('passwordError').textContent = 'Password must be at least 6 characters long';
-        isValid = false;
+        return false;
     }
 
-    // Validate mobile number (optional field)
+    // Validate mobile (optional field)
     if (mobile !== '') {
-        const mobilePattern = /^[0-9]+$/; // Only digits
-        if (!mobilePattern.test(mobile)) {
-            document.getElementById('mobileError').textContent = 'Mobile number must contain only digits';
-            isValid = false;
-        } else if (mobile.length !== 10) {
-            document.getElementById('mobileError').textContent = 'Mobile number must be exactly 10 digits long';
-            isValid = false;
+        var mobileRegex = /^[0-9]{10,15}$/; // Allow 10 to 15 digits
+        if (!mobileRegex.test(mobile)) {
+            document.getElementById('mobileError').textContent = 'Mobile number must contain only digits (10-15 characters)';
+            return false;
         }
     }
 
-    // If any validation fails, prevent form submission
-    return isValid;
+    // Form is valid
+    alert('Form is valid!');
+    return true;
+}
+
+// Save data locally (optional feature for testing purposes)
+function saveDataLocally(name, email, password, mobile) {
+    var formData = {
+        name: name,
+        email: email,
+        password: password,
+        mobile: mobile
+    };
+
+    localStorage.setItem('formData', JSON.stringify(formData));
+    alert('Data saved to local storage!');
+}
+
+// Confirmation page: Retrieve data from local storage
+var storedData = localStorage.getItem('formData');
+if (storedData) {
+    var parsedData = JSON.parse(storedData);
+    document.getElementById('storedName').textContent = parsedData.name;
+    document.getElementById('storedEmail').textContent = parsedData.email;
+    document.getElementById('storedPassword').textContent = parsedData.password;
+    document.getElementById('storedMobile').textContent = parsedData.mobile;
+} else {
+    console.log("No data stored.");
 }

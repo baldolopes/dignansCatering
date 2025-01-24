@@ -108,3 +108,66 @@ if (storedData) {
     document.getElementById('storedData').textContent = "No data stored.";
 }
 
+// Register/Login Form validation
+function validateForm1() {
+    // Reset error messages
+    document.getElementById('nameError').textContent = '';
+    document.getElementById('emailError').textContent = '';
+    document.getElementById('passwordError')?.textContent = '';
+    document.getElementById('mobileError')?.textContent = '';
+
+    // Get form values
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value.trim();
+    const mobile = document.getElementById('mobile').value.trim();
+
+    let isValid = true;
+
+    // Validate name
+    const namePattern = /^[a-zA-Z\s]+$/; // Only letters and spaces
+    if (name === '') {
+        document.getElementById('nameError').textContent = 'Name is required';
+        isValid = false;
+    } else if (!namePattern.test(name)) {
+        document.getElementById('nameError').textContent = 'Name must contain only letters and spaces';
+        isValid = false;
+    } else if (name.split(/\s+/).length < 2) {
+        document.getElementById('nameError').textContent = 'Name must include at least two words';
+        isValid = false;
+    }
+
+    // Validate email
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email format
+    if (email === '') {
+        document.getElementById('emailError').textContent = 'Email is required';
+        isValid = false;
+    } else if (!emailPattern.test(email)) {
+        document.getElementById('emailError').textContent = 'Enter a valid email address';
+        isValid = false;
+    }
+
+    // Validate password
+    if (password === '') {
+        document.getElementById('passwordError').textContent = 'Password is required';
+        isValid = false;
+    } else if (password.length < 6) {
+        document.getElementById('passwordError').textContent = 'Password must be at least 6 characters long';
+        isValid = false;
+    }
+
+    // Validate mobile number (optional field)
+    if (mobile !== '') {
+        const mobilePattern = /^[0-9]+$/; // Only digits
+        if (!mobilePattern.test(mobile)) {
+            document.getElementById('mobileError').textContent = 'Mobile number must contain only digits';
+            isValid = false;
+        } else if (mobile.length !== 10) {
+            document.getElementById('mobileError').textContent = 'Mobile number must be exactly 10 digits long';
+            isValid = false;
+        }
+    }
+
+    // If any validation fails, prevent form submission
+    return isValid;
+}

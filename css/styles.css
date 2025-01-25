@@ -155,41 +155,48 @@ header{
 }
 
 .welcome h1{
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+    color: white;
     margin-bottom: 1rem;
     margin-left: 2rem;
-    margin-top: 2rem;
+    margin-top: 6rem;
 }
 
 .welcome p{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin-bottom: 2rem;
-    padding: 1rem;
+    padding: 2rem;
+    margin-right: 4rem;
     background-color: #00000062;
     border-radius: 10px;
+
 }
 
 .new-customer{
-    background-color: #00000062;
-    color: white;
-    font-size: 1rem;
-    padding: 1rem 1rem;
+    margin-top: 3rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    bottom: 0;
-    margin-bottom: 0;
-    text-align: left;
+    background-color: #00000062;
+    color: white;
+    padding: 2rem;
+}
+
+.new-customer h2{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.7rem;
 }
 
 .new-customer p{
-    background-color: rgba(255, 255, 255, 0);
-    font-size: 1.1rem;
-    text-align: left;
+    font-size: 1.2rem;
+    margin-bottom: 0rem;
+    padding: 0rem;
+    margin-right: 2rem;
+    border-radius: 10px;
+    line-height: 4;
 }
 
 .footer{
-    margin-top: 0;
     display: flex;
     flex-wrap: wrap;
     background-color: #6C736A;
@@ -197,31 +204,34 @@ header{
     font-size: 1rem;
     line-height: 1.3;
     color: #FFFFFF;
+    padding-left: 0rem;
 }
-
-/* .footer{
-    padding: 0;
-} */
 
 .footer-section{
     margin-top: 0.5rem;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0rem;
-    padding-top: 1rem;
-    padding-right: 0rem;
-    padding-bottom: 0.5rem;
     color: #FFFFFF;
 }
 
-.sitemap, .contact-us{
+.sitemap{
     width: 46%;
-    padding-left: 0.8rem;
+    padding-bottom: 1.5rem;
+    padding-left: 0.7rem;
 }
 
-.open-hours, .find-us{
+.contact-us{
     width: 46%;
-    padding-left: 0.8rem;
+}
+
+
+.open-hours{
+    width: 46%;
+    padding-left: 0.7rem;
+}
+
+.find-us{
+    width: 46%;
 }
 
 .follow-us{
@@ -229,6 +239,7 @@ header{
     align-items: center;
     justify-content: center;
     padding-left: 0.8rem;
+    margin-top: 2rem;
 }
 
 .follow-us .icons{
@@ -250,11 +261,11 @@ header{
 }
 
 .follow-us .social-icon:hover {
-    color: #007BFF;
+    color: #60adff;
     transform: scale(1.2);
 }
 
-.sitemap, .contact-us, .open-hours, .find-us h3{
+.sitemap, .contact-us, .open-hours, .find-us, .follow-us{
     color: rgb(218, 218, 218);
 }
 
@@ -276,23 +287,53 @@ footer a:hover{
     color: #c9c9c9
 }
 
-.footer-section >div{
+.follow-us {
+    /* ... other styles ... */
+    position: relative; /* Necesario para posicionar el elemento ::after */
+  }
+  
+  .follow-us::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Ajusta la posición de la línea */
+    left: 0;
+    right: 0;
+    height: 2px; 
+    background-color: #ccc; /* Color de la línea */
+  }
+
+  .follow-us::before {
+    content: '';
+    position: absolute;
+    top: 45%; /* Posiciona la línea justo debajo del texto */
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #ccc;
+    transform: translateY(-5px); /* Mueve la línea 5px hacia arriba */
+  }
+
+
+
+/* .footer-section >div{
     border-right: 1px solid #ccc;
     
-}
+} */
 
 .copyright{
     width: 100%;
     background-color: #131f0f;
     color: rgb(182, 182, 182);
-    margin: 0rem;
-    padding: 0.2rem;
+    margin-top: 1rem;
+    padding: 0.3rem;
     box-shadow: 0px 2px 5px rgba(104, 104, 104, 0.6);
+    margin-bottom: 0.5rem;
 }
 
 .copyright h4{
     font-size: 0.8rem;
     text-align: center;
+    margin-left: 0rem;
 }
 
 .footer-section > div:last-child {
@@ -425,6 +466,56 @@ footer iframe {
     background-color: #004da0;
 }
 
+.discount-codes {
+    margin-top: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.discount-codes h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #333;
+    background-color: #3195ff;
+}
+
+.discount-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.discount-table thead {
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+}
+
+.discount-table th,
+.discount-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.discount-table tbody{
+    font-size: 0.8rem;
+}
+
+.discount-table tbody tr:nth-child(even) {
+    background-color: #707070;
+}
+
+.discount-table tbody tr:hover {
+    background-color: #929292;
+}
+
+.discount-table th {
+    font-weight: bold;
+}
+
+
 /* MENU SELECTION */
 /* Main content styling */
 .all-menu {
@@ -549,6 +640,7 @@ footer iframe {
     margin: 0rem auto;
     text-align: center;
     flex-direction: column;
+
 }
 
 .contact-form-section h3{
@@ -560,8 +652,12 @@ footer iframe {
 /* CONTACT FORM */
 
 .contact{
+    display: flex;
+    flex-direction: column;
     padding-top: 1rem;
-    
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .contact h1 {
@@ -570,6 +666,7 @@ footer iframe {
     font-size: 1.8em;
     color: #000000;
     background-color: rgb(160, 160, 160);
+    width: 100%;
 }
 
 .contact-form-section h1{
@@ -675,6 +772,7 @@ textarea:focus {
     margin: 0rem auto;
     text-align: center;
     flex-direction: column;
+    width: 70%;
 }
 
 /* CONTACT FORM */
@@ -820,6 +918,57 @@ textarea:focus {
     width: 60%;
 }
 
+/* Printing button and styles */
+.print-button {
+    display: flex;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.print-menu{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    margin-right: 1rem;
+}
+
+.print-button:hover {
+    background-color: #45a049;
+}
+
+.print-button i {
+    margin-left: 1rem; /* Espacio entre el texto y el ícono */
+    font-size: 1rem; /* Ajusta el tamaño del ícono */
+}
+
+@media print{
+    header, footer, .footer, .print-button{
+        display: none;
+    }
+
+    .print-only{
+        display: block;
+    }
+
+    body{
+        font-size: 14px;
+        color: #000;
+    }
+
+    /* Remove background colours */
+    *{
+        background: none !important;
+        color: #000 !important;
+    }
+
+
+}
 
 
 /* Media query for tablet devices (min-width: 767px) */

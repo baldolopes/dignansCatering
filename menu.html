@@ -37,6 +37,24 @@
 <!-- Main part of page -->
 <main class="main-content">
     <section class="all-menu">
+
+        <!-- Botón Print Menu -->
+        <div class="print-menu">
+            <button id="print-menu-button" class="print-button" onclick="enhancedPrint()">
+                Print Menu <i class="bi bi-printer"></i>
+            </button>
+        </div>
+       
+        <script>
+            function enhancedPrint(){
+                // Optional: Apply a "printing" class if additional styling is needed
+                document.body.classList.add('printing');
+                window.print();
+
+                // Remove the "printing class after printing"
+            }
+        </script>
+
         <h2>PARTY MENUS</h2>
         <div class="party-menu">
             <!-- ~Menu A -->

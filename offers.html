@@ -38,6 +38,23 @@
 
 <main class="main-content">
     <section class="monthly-offers">
+        <!-- Botón Print Menu -->
+         <div class="print-menu">
+            <button id="print-menu-button" class="print-button" onclick="enhancedPrint()">
+                Print Menu <i class="bi bi-printer"></i>
+            </button>
+        </div>
+       
+        <script>
+            function enhancedPrint(){
+                // Optional: Apply a "printing" class if additional styling is needed
+                document.body.classList.add('printing');
+                window.print();
+
+                // Remove the "printing class after printing"
+            }
+        </script>
+
         <h2>MONTHLY SPECIAL OFFERS</h2>
         <div class="offers-container">
             <!-- Offer 1 -->
@@ -111,6 +128,41 @@
 
         </div>
     </section>
+
+    <section class="discount-codes">
+        <h2>Discount Codes</h2>
+        <table class="discount-table">
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Description</th>
+                    <th>Discount</th>
+                    <th>Valid Until</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>WELCOME10</td>
+                    <td>10% off for first-time customers</td>
+                    <td>10%</td>
+                    <td>31st March 2025</td>
+                </tr>
+                <tr>
+                    <td>PARTY20</td>
+                    <td>20% off on party orders over £100</td>
+                    <td>20%</td>
+                    <td>30th June 2025</td>
+                </tr>
+                <tr>
+                    <td>FREESHIP</td>
+                    <td>Free delivery on orders above £50</td>
+                    <td>£5</td>
+                    <td>31st December 2025</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
 </main>
 
 

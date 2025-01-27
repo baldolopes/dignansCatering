@@ -166,7 +166,7 @@ header{
     font-size: 1.7rem;
     margin-bottom: 2rem;
     padding: 2rem;
-    margin-right: 4rem;
+    margin-right: 2rem;
     background-color: #00000062;
     border-radius: 10px;
 
@@ -184,16 +184,27 @@ header{
 .new-customer h2{
     display: flex;
     flex-direction: column;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 .new-customer p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 0rem;
     padding: 0rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
     border-radius: 10px;
     line-height: 4;
+}
+
+.new-customer-register{
+    text-decoration: none;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.new-customer-register:hover{
+    color: #F2E8DF ;
+    text-decoration: underline;
 }
 
 .footer{
@@ -322,8 +333,8 @@ footer a:hover{
 
 .copyright{
     width: 100%;
-    background-color: #131f0f;
-    color: rgb(182, 182, 182);
+    background-color: #F2E8DF;
+    color: #131f0f;
     margin-top: 1rem;
     padding: 0.3rem;
     box-shadow: 0px 2px 5px rgba(104, 104, 104, 0.6);
@@ -354,6 +365,8 @@ footer iframe {
     margin: 0;
     padding: 0;
     padding-top: 1rem;
+    align-items: left;
+    justify-content: left;
 }
 
 .monthly-offers h2 {
@@ -368,7 +381,8 @@ footer iframe {
     flex-wrap: wrap;
     gap: 0.7rem;
     margin: 0rem;
-    justify-content: center;
+    margin-left: 1rem;
+    justify-content: flex-start;
     
 }
 
@@ -390,9 +404,9 @@ footer iframe {
     padding: 0.7rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     transition: transform 0.3s ease;
     margin-bottom: 1rem;
+
 }
 
 
@@ -537,7 +551,8 @@ footer iframe {
     flex-wrap: wrap;
     gap: 0.7rem;
     margin: 0rem;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 1rem;
     
 }
 
@@ -631,13 +646,23 @@ footer iframe {
 
 
 /* CONTACT US STYLES */
+
+.contact-us-section{
+    margin-top: 2rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .contact-form-section {
     background-color: rgba(219, 219, 219, 0.9);
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     max-width: 99.99%;
-    margin: 0rem auto;
+    margin: 1rem auto;
     text-align: center;
     flex-direction: column;
 
@@ -654,7 +679,8 @@ footer iframe {
 .contact{
     display: flex;
     flex-direction: column;
-    padding-top: 1rem;
+    padding: 1rem;
+    margin: 0rem;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -1036,6 +1062,86 @@ textarea:focus {
         padding: 20px;
     }
 
+    .welcome h1{
+        font-size: 4rem;
+        color: white;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        margin-top: 6rem;
+    }
+    
+    .welcome p{
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        padding: 2rem;
+        margin-right: 4rem;
+        background-color: #00000062;
+        border-radius: 10px;
+    
+    }
+    
+    .new-customer{
+        margin-top: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #00000062;
+        color: white;
+        padding: 2rem;
+    }
+    
+    .new-customer h2{
+        display: flex;
+        flex-direction: column;
+        font-size: 2.3rem;
+    }
+    
+    .new-customer p{
+        font-size: 1.6rem;
+        margin-bottom: 0rem;
+        padding: 0rem;
+        margin-right: 2rem;
+        border-radius: 10px;
+        line-height: 2;
+    }
+    
+    .contact-us-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 2rem;
+        padding: 0rem;
+    }
+
+    .contact{
+        padding-right: 1rem;
+        width: 100%;
+    }
+
+    .contact-form-section{
+        padding-right: 1rem;
+        width: 50%;
+    }
+
+    .google-btn{
+        width: auto;
+        margin-top: 0rem;
+    }
+
+    .register-page{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 2rem;
+        padding: 0rem;
+    }
+
+    .register-form{
+        padding-right: 1rem;
+        width: 50%;
+    }
+
     .footer-section {
         flex-direction: row; 
         padding: 0rem 0rem;
@@ -1050,8 +1156,16 @@ textarea:focus {
         width: 45%;
     }
 
+    .follow-us{
+        text-align: left;
+        margin-top: 0rem;
+        padding-top: 0rem;
+    }
+    
     .follow-us h3{
         text-align: left;
+        margin-top: 0rem;
+        padding-top: 0rem;
     }
     
     footer iframe {
@@ -1059,6 +1173,11 @@ textarea:focus {
         height: auto;
         margin: 0 auto;
         display: block;
+    }
+
+    .follow-us::after,
+    .follow-us::before {
+        content: none; /* Elimina las líneas */
     }
 
 }
@@ -1117,6 +1236,107 @@ textarea:focus {
         color: #1c1c1c;
     }
 
+
+    .welcome h1{
+        font-size: 4.5rem;
+        color: white;
+        margin-bottom: 1rem;
+        margin-left: 3rem;
+        margin-top: 6rem;
+    }
+    
+    .welcome p{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        margin-right: 4rem;
+        background-color: #00000062;
+        border-radius: 10px;
+    
+    }
+    
+    .new-customer{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        background-color: #00000062;
+        color: white;
+        padding-left: 3rem;
+        padding-bottom: 0rem;
+        line-height: normal;
+        margin-right: 4rem;
+        border-radius: 10px;
+    }
+    
+    .new-customer h2{
+        display: flex;
+        flex-direction: column;
+        font-size: 3rem;
+    }
+    
+    .new-customer p{
+        font-size: 2.5rem;
+        margin-bottom: 0rem;
+        padding: 0rem;
+        margin-right: 4rem;
+        border-radius: 10px;
+        line-height: 4;
+    }
+
+    .contact-us-section{
+        display: flex;
+        align-items: first baseline;
+        justify-content: center;
+        flex-direction: row;
+        padding: 2rem;
+    }
+
+    .contact{
+        padding: 1rem;
+        width: 40%;
+    }
+
+    .contact-form-section{
+        padding: 1rem;
+        margin-left: 1rem;
+        width: auto;
+    }
+
+    .google-btn{
+        width: auto;
+        margin-top: 0rem;
+    }
+
+    .register-page{
+        display: flex;
+        align-items: first baseline;
+        justify-content: center;
+        flex-direction: row;
+        padding: 2rem;
+    }
+
+    .register{
+        width: 40%;
+    }
+
+    .register-form{
+        padding: 1rem;
+        padding-top: 0rem;
+        margin-left: 2rem;
+        width: 40%;
+        max-width: 400px;
+    }
+
+    .register-login-form{
+        width: auto;
+        
+    }
+
+    .google-btn{
+        width: auto;
+        margin-top: 0rem;
+    }
+
     footer{
         font-size: 0.9rem;
     }
@@ -1147,12 +1367,14 @@ textarea:focus {
         text-align: left;
         align-items: center;
         justify-content: center;
+        margin-left: 1rem;
     }
 
     .follow-us .icons{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-left: 1rem;
+        justify-content: left;
+        align-items: flex-start;
         gap: 2rem;
         width: 100%;
         font-size: 1.3rem;

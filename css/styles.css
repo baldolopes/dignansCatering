@@ -973,6 +973,36 @@ textarea:focus {
     font-size: 1rem; /* Ajusta el tamaño del ícono */
 }
 
+.confirmation-form-section{
+    background-color: rgba(219, 219, 219, 0.9);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    margin: 1rem auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmation-form-section h3{
+    color: #3b3b3b;
+    font-size: 1.4rem;
+    padding: 0rem;
+}
+
+.confirmation-form p{
+    color: #424242;
+}
+
+.confirmation-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @media print{
     header, footer, .footer, .print-button{
         display: none;
@@ -992,7 +1022,6 @@ textarea:focus {
         background: none !important;
         color: #000 !important;
     }
-
 
 }
 

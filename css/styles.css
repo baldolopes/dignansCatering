@@ -44,7 +44,7 @@ header{
 }
 
 .abrir-menu{
-    color: #ffffff;
+    color: #F2E8DF;
     font-size: 2.5rem;
     background-color: black;
     border-radius: 5px;
@@ -113,7 +113,7 @@ header{
 
 .nav-list li a {
     text-decoration: none;
-    color: #fff;
+    color: #F2E8DF;
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
     position: relative;
@@ -121,10 +121,9 @@ header{
 }
 
 .nav-list li a:hover {
-    background-color: #131f0f;
+    background-color: #F2E8DF;
     border-radius: 90px;
-    color: #F2E8DF;
-
+    color: #131f0f;
 }
 
 .nav-list li a::after {
@@ -135,7 +134,7 @@ header{
     width: 0;
     height: 2px;
     background-color: #F2E8DF;
-    transition: width 0.3s ease;
+    transition: width 0.7s ease;
 }
 
 .nav-list li a:hover::after {
@@ -752,7 +751,7 @@ footer iframe {
     padding: 0.8rem 1.5em;
     border: none;
     border-radius: 4px;
-    background-color: #131f0f;
+    background-color: #4285F4;
     color: white;
     font-size: 1em;
     cursor: pointer;
@@ -760,9 +759,10 @@ footer iframe {
 }
 
 .submit-btn:hover {
-    background-color: #493731;
+    background-color: #28a745;
     
 }
+
 
 .error{
     color: red;
@@ -797,18 +797,6 @@ textarea:focus {
 
 
 /* REGISTER/LOGIN PAGE */
-.register-form {
-    background-color: rgba(219, 219, 219, 0.9);
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    max-width: 99.99%;
-    margin: 0rem auto;
-    text-align: center;
-    flex-direction: column;
-    width: 70%;
-}
-
 /* CONTACT FORM */
 
 .register{
@@ -820,6 +808,19 @@ textarea:focus {
     width: 100%;
     margin: 0 auto;
     text-align: center;
+}
+
+
+.register-form {
+    background-color: rgba(219, 219, 219, 0.9);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 99%;
+    margin: 0rem auto;
+    text-align: center;
+    flex-direction: column;
+    width: 75%;
 }
 
 .register h1 {
@@ -942,7 +943,7 @@ textarea:focus {
 }
 
 .btn-submit {
-    background: #28a745;
+    background: #4285F4;
     color: white;
     border: none;
     border-radius: 5px;
@@ -950,6 +951,10 @@ textarea:focus {
     font-size: 16px;
     cursor: pointer;
     width: 60%;
+}
+
+.btn-submit:hover{
+    background-color: #28a745;
 }
 
 /* Printing button and styles */
@@ -1086,6 +1091,12 @@ textarea:focus {
         color: #1c1c1c;
     }
 
+    .nav-list li a:hover {
+        background-color: #131f0f;
+        border-radius: 90px;
+        color: #F2E8DF;
+    }
+
     .home{
         background-image: url('/images/background.jpg');
         background-size: cover;
@@ -1176,7 +1187,7 @@ textarea:focus {
 
     .register-form{
         padding-right: 1rem;
-        width: 50%;
+        width: 40%;
     }
 
     .footer-section {
@@ -1274,6 +1285,11 @@ textarea:focus {
         color: #1c1c1c;
     }
 
+    .nav-list li a:hover {
+        background-color: #131f0f;
+        border-radius: 90px;
+        color: #F2E8DF;
+    }
 
     .welcome h1{
         font-size: 4.5rem;
@@ -1350,24 +1366,20 @@ textarea:focus {
         align-items: first baseline;
         justify-content: center;
         flex-direction: row;
-        padding: 2rem;
+        padding: 1rem;
     }
 
     .register{
+        padding: 1rem;
         width: 40%;
     }
 
     .register-form{
         padding: 1rem;
         padding-top: 0rem;
-        margin-left: 2rem;
-        width: 40%;
-        max-width: 400px;
-    }
-
-    .register-login-form{
-        width: auto;
-        
+        margin-left: 1rem;
+        width: 20%;
+        max-width: 20%;
     }
 
     .google-btn{

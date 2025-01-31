@@ -141,7 +141,7 @@ function validateForm1() {
     var wordCount = name.trim().split(/\s+/).length;
     
     if (wordCount < 2) {
-        document.getElementById('nameError').textContent = 'Name must have at least two words';
+        document.getElementById('nameError').textContent = 'Name must have at least two ajfdlkjsa; words';
         return false;
     }
 

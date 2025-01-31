@@ -1133,7 +1133,7 @@ textarea:focus {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+        padding: 1rem;
     }
 
     .welcome-section{
@@ -1307,7 +1307,7 @@ textarea:focus {
 
     .register-form{
         padding-right: 1rem;
-        width: 40%;
+        width: 100%;
     }
 
     .footer-section {
@@ -1411,6 +1411,19 @@ textarea:focus {
         color: #F2E8DF;
     }
 
+    .main-content{
+        background-image: url('/images/background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: auto;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
     .welcome-section{
         display: flex;
         flex-direction: column;
@@ -1454,11 +1467,11 @@ textarea:focus {
     .new-customer h2{
         display: flex;
         flex-direction: column;
-        font-size: 3rem;
+        font-size: 2rem;
     }
     
     .new-customer p{
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-bottom: 0rem;
         padding: 0rem;
         margin-right: 4rem;
@@ -1538,11 +1551,15 @@ textarea:focus {
         justify-content: center;
         flex-direction: row;
         padding: 2rem;
+        width: 80%;
+        max-width: 80%;
+        margin: auto;
+
     }
 
     .contact{
         padding: 1rem;
-        width: 40%;
+        width: 50%;
     }
 
     .contact-form-section{
@@ -1561,20 +1578,21 @@ textarea:focus {
         align-items: first baseline;
         justify-content: center;
         flex-direction: row;
-        padding: 1rem;
+        padding: 2rem;
+        width: 80%;
+        max-width: 80%;
+        margin: auto;
     }
 
     .register{
         padding: 1rem;
-        width: 40%;
+        width: 50%;
     }
 
     .register-form{
         padding: 1rem;
-        padding-top: 0rem;
         margin-left: 1rem;
-        width: 20%;
-        max-width: 20%;
+        width: auto;
     }
 
     .google-btn{

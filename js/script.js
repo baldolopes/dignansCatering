@@ -171,9 +171,17 @@ function validateForm1() {
         }
     }
 
+    // Form is valid, save data to local storage
+    saveDataLocally(name, email, password, mobile);
+
+    // Redirect to confirmation.html
+    window.location.href = 'registrationconfirm.html';
+
+    return false; // Prevent the form from submitting traditionally
+
     // Form is valid
-    alert('Form is valid!');
-    return true;
+    // alert('Form is valid!');
+    // return true;
 }
 
 // Save data locally (optional feature for testing purposes)

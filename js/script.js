@@ -164,7 +164,7 @@ function validateForm1() {
 
     // Validate mobile (optional field)
     if (mobile !== '') {
-        var mobileRegex = /^[0-9]{10,15}$/; // Allow 10 to 15 digits
+        var mobileRegex = /^[0-9]{11}$/; // Allow 11 digits
         if (!mobileRegex.test(mobile)) {
             document.getElementById('mobileError').textContent = 'Mobile number must contain only digits (10-15 characters)';
             return false;

@@ -723,7 +723,7 @@ footer iframe {
     width: 100%;
 }
 
-.contact h2 {
+.contact-us-section h2 {
     text-align: center;
     margin-bottom: 1.5em;
     font-size: 1.8em;
@@ -733,12 +733,12 @@ footer iframe {
     border-radius: 10px;
 }
 
-.contact-form-section h1{
+/* .contact-form-section h1{
     text-align: center;
     margin-bottom: 1.5em;
     font-size: 1.8em;
     color: #000000;
-}
+} */
 
 /* Form styling */
 .contact-form {
@@ -834,14 +834,25 @@ textarea:focus {
 .register{
     display: flex;
     flex-direction: column;
-    padding-top: 1rem;
-    align-items: center;   
+    padding: 1rem;
+    margin: 0rem;
+    align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 0 auto;
-    text-align: center;
 }
 
+
+.register h2 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5em;
+    font-size: 1.8em;
+    color: #000000;
+    background-color: rgb(160, 160, 160);
+    width: 80%;
+    border-radius: 10px;
+}
 
 .register-form {
     background-color: rgba(219, 219, 219, 0.9);
@@ -853,16 +864,6 @@ textarea:focus {
     text-align: center;
     flex-direction: column;
     width: 75%;
-}
-
-.register-page h2 {
-    text-align: center;
-    margin-bottom: 1.5em;
-    font-size: 1.8em;
-    color: #000000;
-    background-color: rgb(160, 160, 160);
-    width: 40%;
-    border-radius: 10px;
 }
 
 .google-btn {
@@ -1309,6 +1310,18 @@ textarea:focus {
         width: 50%;
     }
 
+    .register h2 {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5em;
+        font-size: 1.8em;
+        color: #000000;
+        background-color: rgb(160, 160, 160);
+        width: 80%;
+        border-radius: 10px;
+    }
+
     .register-form{
         padding-right: 1rem;
         width: 100%;
@@ -1583,6 +1596,18 @@ textarea:focus {
         width: 80%;
         max-width: 80%;
         margin: auto;
+    }
+
+    .register h2{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5em;
+        font-size: 1.8em;
+        color: #000000;
+        background-color: rgb(160, 160, 160);
+        width: 90%;
+        border-radius: 10px;
     }
 
     .register{

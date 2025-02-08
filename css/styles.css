@@ -492,12 +492,10 @@ footer iframe {
     margin-bottom: 0.5rem;
 }
 
-.add-to-cart{
-    margin-top: auto;
-    text-align: center;
-}
-
-.add-to-cart .buy-button{
+.buy-buttonmenua, .buy-buttonmenub,
+.buy-buttonlunch1, .buy-buttonlunch2, .buy-buttonlunch3, 
+.buy-buttonex1, .buy-buttonex2, .buy-buttonex3,
+.buy-button-of1, .buy-button-of2, .buy-button-of3, .buy-button-of4 {
     background-color: #007bff;
     color: #fff;
     padding: 0.5rem 2rem;
@@ -508,8 +506,11 @@ footer iframe {
     transition: background-color 0.3s ease;
 }
 
-.add-to-cart .buy-button:hover {
-    background-color: #004da0;
+.buy-buttonmenua:hover, .buy-buttonmenub:hover,
+.buy-buttonlunch1:hover, .buy-buttonlunch2:hover, .buy-buttonlunch3:hover, 
+.buy-buttonex1:hover, .buy-buttonex2:hover, .buy-buttonex3:hover,
+.buy-button-of1:hover, .buy-button-of2:hover, .buy-button-of3:hover, .buy-button-of4:hover {
+    background-color: #0054ad;
 }
 
 .discount-codes {

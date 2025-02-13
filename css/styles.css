@@ -688,7 +688,7 @@ footer iframe {
     padding-top: 1rem;
     align-items: center;   
     justify-content: center;
-    width: 100%;
+    width: auto;
     margin: 0 auto;
     text-align: center;
 }
@@ -831,6 +831,13 @@ textarea:focus {
 /* REGISTER/LOGIN PAGE */
 /* CONTACT FORM */
 
+.register-page{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
+}
+
 .register{
     display: flex;
     flex-direction: column;
@@ -838,19 +845,18 @@ textarea:focus {
     margin: 0rem;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: auto;
 }
 
-
-.register h2 {
+.register-page h2 {
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5em;
+    margin: 0 auto 1.5em auto;
     font-size: 1.8em;
     color: #000000;
     background-color: rgb(160, 160, 160);
-    width: 80%;
+    width: 70%;
     border-radius: 10px;
 }
 
@@ -859,11 +865,11 @@ textarea:focus {
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    max-width: 99%;
     margin: 0rem auto;
     text-align: center;
     flex-direction: column;
-    width: 75%;
+    width: auto;
+    max-width: 60%;
 }
 
 .google-btn {
@@ -878,7 +884,7 @@ textarea:focus {
     font-size: 16px;
     cursor: pointer;
     margin-bottom: 20px;
-    width: 55%;
+    width: auto;
 }
 
 .google-btn i {
@@ -955,7 +961,7 @@ textarea:focus {
 /* Form input constraints */
 input[type="email"],
 input[type="tel"],
-input[type="text"]
+input[type="text"],
 input[type="password"] {
     width: 100%;
     padding: 0.8rem;
@@ -1307,10 +1313,10 @@ textarea:focus {
         flex-direction: column;
         padding-top: 2rem;
         padding: 0rem;
-        width: 50%;
+        width: 80%;
     }
 
-    .register h2 {
+    .register-page h2 {
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -1318,12 +1324,14 @@ textarea:focus {
         font-size: 1.8em;
         color: #000000;
         background-color: rgb(160, 160, 160);
-        width: 80%;
+        width: 60%;
         border-radius: 10px;
     }
 
+
+
     .register-form{
-        padding-right: 1rem;
+        padding-right: 0rem;
         width: 100%;
     }
 
@@ -1566,24 +1574,22 @@ textarea:focus {
         justify-content: center;
         flex-direction: column;
         padding: 2rem;
-        width: 80%;
-        max-width: 80%;
-        min-width: 40%;
+        width: auto;
+        
     }
 
     .contact{
         padding: 1rem;
-        width: 45%;
+        width: 100%;
     }
 
     .contact-form-section{
         padding: 1rem;
-        width: 30%;
-        min-width: 40%;
+        width: auto;
     }
 
     .google-btn{
-        width: auto;
+        width: 100%;
         margin-top: 0rem;
     }
 
@@ -1592,7 +1598,7 @@ textarea:focus {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding: 2rem;
+        padding: 0rem;
         width: 80%;
         max-width: 80%;
         margin: auto;
@@ -1617,7 +1623,7 @@ textarea:focus {
         justify-content: center;
         padding: 1rem;
         width: 33%;
-        min-width: 45%;
+        
     }
 
     .register-form{
